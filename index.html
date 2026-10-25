@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank — Java Backend Developer</title>
+  <meta name="description" content="Shashank is a Java backend developer in Mumbai building enterprise banking APIs with Spring Boot, microservices and Azure. Incident management, event-driven systems and cloud-native delivery." />
+  <meta property="og:title" content="Shashank — Java Backend Developer" />
+  <meta property="og:description" content="Java APIs for banking workflows. Spring Boot · Microservices · Azure." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════ Preloader ══════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__name">Shashank<span class="accent">.</span></span>
+      <span class="preloader__bar"><span></span></span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- Film grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ══════════ Announcement marquee ══════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track" id="tickerTrack">
+      <div class="ticker__group">
+        <span><i class="tick-dot"></i>Open to new opportunities</span>
+        <span>Java Backend Developer — Spring Boot · Microservices · Azure</span>
+        <span>Mumbai, India — working worldwide</span>
+        <span><i class="tick-dot"></i>Open to new opportunities</span>
+        <span>Java Backend Developer — Spring Boot · Microservices · Azure</span>
+        <span>Mumbai, India — working worldwide</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ Header ══════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="Shashank — home">
+        <span class="logo__mark">S</span><span class="logo__dash"></span><span class="logo__mark">4066</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work" class="nav__link">Work</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#stack" class="nav__link">Stack</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a class="icon-btn" href="https://github.com/shashank4066" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/shashank4066/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/></svg>
+        </a>
+        <a class="btn btn--accent btn--sm magnetic" href="mailto:shashank.dev.in@gmail.com"><span>Let's talk</span></a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="mobileMenu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#work" class="menu__link" style="--i:0">Work</a>
+      <a href="#experience" class="menu__link" style="--i:1">Experience</a>
+      <a href="#stack" class="menu__link" style="--i:2">Stack</a>
+      <a href="#about" class="menu__link" style="--i:3">About</a>
+      <a href="#contact" class="menu__link" style="--i:4">Contact</a>
+    </nav>
+    <div class="menu__meta">
+      <a href="mailto:shashank.dev.in@gmail.com">shashank.dev.in@gmail.com</a>
+      <div class="menu__socials">
+        <a href="https://github.com/shashank4066" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shashank4066/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/Shashank-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ══════════ Hero ══════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="hero__label reveal">Java Backend Developer — Spring Boot · Microservices · Azure</p>
+          <h1 class="hero__name">
+            <span class="hero__name-line"><span>Shashank</span></span>
+          </h1>
+          <p class="hero__bio reveal">
+            I build <strong>Java APIs for banking workflows</strong> — 2+ years of enterprise
+            mortgage-loan platforms at <a href="https://www.tcs.com" target="_blank" rel="noopener">Tata Consultancy Services</a>,
+            event-driven services with Kafka, and cloud-native delivery on
+            <a href="#stack">Azure</a>. I care about systems that are tested, observable
+            and boringly reliable in production.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--accent magnetic" href="mailto:shashank.dev.in@gmail.com"><span>Let's talk</span></a>
+            <a class="btn btn--ghost magnetic" href="assets/Shashank-Resume.pdf" target="_blank" rel="noopener"><span>Download résumé</span></a>
+            <a class="btn btn--icon magnetic" href="https://github.com/shashank4066" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg viewBox="0 0 16 16" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <canvas class="hero__globe" id="globeCanvas" aria-hidden="true"></canvas>
+          <figure class="hero__portrait">
+            <img src="assets/img/shashank-hero.png" alt="" draggable="false" />
+            <span class="hero__shadow"></span>
+          </figure>
+          <div class="hero__chip reveal">
+            <span class="pulse-dot"></span> Available for new opportunities
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats" id="stats">
+        <div class="stats__inner">
+          <div class="stat reveal">
+            <span class="stat__num" data-count="2" data-suffix="+">0+</span>
+            <span class="stat__label">Years of experience</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="12" data-suffix="+">0+</span>
+            <span class="stat__label">Projects shipped</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="200" data-suffix="+">0+</span>
+            <span class="stat__label">REST endpoints built</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="2" data-suffix="×">0×</span>
+            <span class="stat__label">Microsoft certified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Skills marquee ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Java</span><em>◆</em><span>Spring Boot</span><em>◆</em><span>Microservices</span><em>◆</em><span>Apache Kafka</span><em>◆</em><span>Microsoft Azure</span><em>◆</em><span>Docker</span><em>◆</em><span>Kubernetes</span><em>◆</em><span>PostgreSQL</span><em>◆</em><span>Redis</span><em>◆</em><span>Terraform</span><em>◆</em><span>OpenTelemetry</span><em>◆</em><span>React</span><em>◆</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ Work ══════════ -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <p class="section__label reveal">Selected work</p>
+        <h2 class="section__title reveal">Cases</h2>
+        <p class="section__desc reveal">Production-grade platforms, cloud systems and developer tools — each one designed, tested and documented like it's going to production. Because it is.</p>
+      </div>
+
+      <!-- Flagship -->
+      <article class="case case--full reveal">
+        <a class="case__media case__media--dashboard" href="https://github.com/shashank4066/IncidentIQ" target="_blank" rel="noopener" aria-label="IncidentIQ on GitHub">
+          <div class="mock-window">
+            <div class="mock-window__bar"><i></i><i></i><i></i><span>incidentiq — ops console</span></div>
+            <div class="mock-window__body">
+              <div class="mock-col">
+                <span class="mock-kpi">MTTR<b>18m</b></span>
+                <span class="mock-kpi">Open<b>03</b></span>
+                <span class="mock-kpi">Ack'd<b>12</b></span>
+              </div>
+              <div class="mock-col mock-col--chart">
+                <div class="mock-bars">
+                  <i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:42%"></i><i style="--h:80%"></i><i style="--h:64%"></i><i style="--h:90%"></i><i style="--h:52%"></i><i style="--h:70%"></i><i style="--h:44%"></i><i style="--h:86%"></i>
+                </div>
+                <div class="mock-line"></div>
+              </div>
+              <div class="mock-col">
+                <span class="mock-row"><i class="sev sev--1"></i>P0 · payments-api</span>
+                <span class="mock-row"><i class="sev sev--2"></i>P1 · auth-service</span>
+                <span class="mock-row"><i class="sev sev--3"></i>P2 · ledger-svc</span>
+                <span class="mock-row mock-row--ok"><i class="sev sev--ok"></i>RCA draft ready</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="case__info">
+          <div class="case__meta">
+            <span class="case__index">01</span>
+            <span class="case__tag-flag">Flagship</span>
+            <span class="case__year">2026</span>
+          </div>
+          <h3 class="case__name">IncidentIQ</h3>
+          <p class="case__title">Cloud incident management &amp; AI root-cause analysis platform</p>
+          <p class="case__desc">Ingests alerts and telemetry, then creates, classifies and tracks incidents through their lifecycle — with a transactional outbox for event delivery and an AI-assisted RCA pipeline that drafts failure summaries and remediation steps. 26 automated tests plus a real Kafka / PostgreSQL / Redis smoke suite.</p>
+          <div class="case__tags">
+            <span>Java 21</span><span>Spring Boot</span><span>React</span><span>Kafka</span><span>PostgreSQL</span><span>Redis</span><span>OpenTelemetry</span><span>AKS</span><span>Terraform</span>
+          </div>
+          <div class="case__links">
+            <a href="https://github.com/shashank4066/IncidentIQ" target="_blank" rel="noopener" class="link-arrow">GitHub <i>↗</i></a>
+            <a href="https://github.com/shashank4066/IncidentIQ/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener" class="link-arrow">Architecture <i>↗</i></a>
+          </div>
+        </div>
+      </article>
+
+      <div class="case-grid">
+        <article class="case reveal">
+          <a class="case__media case__media--pipeline" href="https://github.com/shashank4066/frameforge-agentic-video" target="_blank" rel="noopener" aria-label="FrameForge on GitHub">
+            <div class="mock-pipeline">
+              <span class="mock-node">Storyboard</span>
+              <i class="mock-edge"></i>
+              <span class="mock-node">Render</span>
+              <i class="mock-edge"></i>
+              <span class="mock-node mock-node--gate">Human review ⛁</span>
+              <i class="mock-edge mock-edge--long"></i>
+              <span class="mock-node">Narrate</span>
+              <i class="mock-edge"></i>
+              <span class="mock-node mock-node--done">MP4 ✓</span>
+            </div>
+            <div class="mock-terminal">
+              <span><b>$</b> frameforge run --resume</span>
+              <span class="dim">→ lease acquired · 60s fencing token</span>
+              <span class="ok">→ worker woke · checkpoint #42 restored</span>
+              <span class="accent-t">→ awaiting review gate…</span>
+            </div>
+          </a>
+          <div class="case__info">
+            <div class="case__meta"><span class="case__index">02</span><span class="case__year">2026</span></div>
+            <h3 class="case__name">FrameForge</h3>
+            <p class="case__title">Agentic AI video pipeline with human review gates</p>
+            <p class="case__desc">Durable orchestration for AI video production — storyboards, renders, narration and exports that survive restarts. SQLite as a durable queue, Redis to wake workers, and 60-second leases that fence stale workers.</p>
+            <div class="case__tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Redis</span><span>FFmpeg</span></div>
+            <div class="case__links"><a href="https://github.com/shashank4066/frameforge-agentic-video" target="_blank" rel="noopener" class="link-arrow">GitHub <i>↗</i></a></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <a class="case__media case__media--ledger" href="https://github.com/shashank4066" target="_blank" rel="noopener" aria-label="FinRecon repository">
+            <div class="mock-ledger">
+              <div class="mock-ledger__row mock-ledger__row--head"><span>txn_id</span><span>bank</span><span>status</span></div>
+              <div class="mock-ledger__row"><span>UPI_88412…</span><span>HDFC</span><b class="ok">MATCHED</b></div>
+              <div class="mock-ledger__row"><span>UPI_88426…</span><span>ICICI</span><b class="ok">MATCHED</b></div>
+              <div class="mock-ledger__row"><span>UPI_88439…</span><span>SBI</span><b class="warn">MISMATCH</b></div>
+              <div class="mock-ledger__row"><span>UPI_88444…</span><span>AXIS</span><b class="warn">TIMEOUT</b></div>
+              <div class="mock-ledger__row"><span>UPI_88457…</span><span>KOTAK</span><b class="ok">MATCHED</b></div>
+              <div class="mock-ledger__foot">reconciled 99.7% · 3 retried · 0 lost</div>
+            </div>
+          </a>
+          <div class="case__info">
+            <div class="case__meta"><span class="case__index">03</span><span class="case__year">2025</span></div>
+            <h3 class="case__name">FinRecon</h3>
+            <p class="case__title">UPI payment reconciliation engine</p>
+            <p class="case__desc">Event-driven service that matches bank settlement files against transaction streams in near-real time, retries mismatches with backoff, and exposes an audit trail for finance teams. Built during freelance work for a payments client.</p>
+            <div class="case__tags"><span>Spring Boot</span><span>Kafka</span><span>MySQL</span><span>Docker</span></div>
+            <div class="case__links"><a href="https://github.com/shashank4066" target="_blank" rel="noopener" class="link-arrow">GitHub <i>↗</i></a></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <a class="case__media case__media--terminal" href="https://github.com/shashank4066/vidhaul" target="_blank" rel="noopener" aria-label="VidHaul on GitHub">
+            <div class="mock-terminal mock-terminal--solo">
+              <span><b>$</b> vidhaul pull --url … --format mp4</span>
+              <span class="dim">→ resolving streams via yt-dlp</span>
+              <span class="ok">→ downloading… 100% · 42.6 MB/s</span>
+              <span class="dim">→ ffmpeg: trim → scale → aac</span>
+              <span class="accent-t">→ artifact stored · /out/clip-01.mp4</span>
+              <span><b>$</b> docker compose up -d vidhaul</span>
+              <span class="ok">→ vidhaul-api healthy · :8080</span>
+            </div>
+          </a>
+          <div class="case__info">
+            <div class="case__meta"><span class="case__index">04</span><span class="case__year">2025</span></div>
+            <h3 class="case__name">VidHaul</h3>
+            <p class="case__title">Media processing API — download, convert, deliver</p>
+            <p class="case__desc">Node.js and Express service wrapping yt-dlp and FFmpeg behind a clean REST API, with job queues, progress events and a one-command Docker deployment.</p>
+            <div class="case__tags"><span>Node.js</span><span>Express</span><span>yt-dlp</span><span>FFmpeg</span><span>Docker</span></div>
+            <div class="case__links"><a href="https://github.com/shashank4066/vidhaul" target="_blank" rel="noopener" class="link-arrow">GitHub <i>↗</i></a></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <a class="case__media case__media--ops" href="https://github.com/shashank4066/OpsPilot" target="_blank" rel="noopener" aria-label="OpsPilot on GitHub">
+            <div class="mock-chat">
+              <span class="mock-bubble mock-bubble--user">api latency spiked at 02:14, where do I look?</span>
+              <span class="mock-bubble mock-bubble--ai">P99 rose on <b>orders-svc</b>. Top cause: DB pool exhaustion after 01:58 deploy. Runbook: <b>RB-114</b> → rollback steps 3–5.</span>
+              <span class="mock-bubble mock-bubble--user">open runbook RB-114</span>
+              <span class="mock-bubble mock-bubble--ai">Opened. Want me to draft the incident timeline?</span>
+            </div>
+          </a>
+          <div class="case__info">
+            <div class="case__meta"><span class="case__index">05</span><span class="case__year">2025</span></div>
+            <h3 class="case__name">OpsPilot</h3>
+            <p class="case__title">DevOps copilot for runbooks &amp; incident playbooks</p>
+            <p class="case__desc">Java service that turns runbooks and past incidents into a conversational first-responder — suggesting likely causes, linking playbooks and drafting timelines while humans stay in command.</p>
+            <div class="case__tags"><span>Java</span><span>Spring Boot</span><span>OpenAI</span><span>MIT</span></div>
+            <div class="case__links"><a href="https://github.com/shashank4066/OpsPilot" target="_blank" rel="noopener" class="link-arrow">GitHub <i>↗</i></a></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <a class="case__media case__media--shop" href="https://github.com/shashank4066" target="_blank" rel="noopener" aria-label="Kartify repository">
+            <div class="mock-shop">
+              <div class="mock-shop__grid">
+                <span class="mock-prod"><i></i></span>
+                <span class="mock-prod"><i></i></span>
+                <span class="mock-prod"><i></i></span>
+                <span class="mock-prod"><i></i></span>
+              </div>
+              <div class="mock-shop__cart">
+                <span>cart · 3 items</span><b>₹ 4,299</b>
+              </div>
+              <div class="mock-shop__svc"><i></i>catalog-svc<i class="ok-dot"></i><em>23ms</em></div>
+              <div class="mock-shop__svc"><i></i>order-svc<i class="ok-dot"></i><em>31ms</em></div>
+              <div class="mock-shop__svc"><i></i>payment-svc<i class="ok-dot"></i><em>28ms</em></div>
+            </div>
+          </a>
+          <div class="case__info">
+            <div class="case__meta"><span class="case__index">06</span><span class="case__year">2024</span></div>
+            <h3 class="case__name">Kartify</h3>
+            <p class="case__title">Headless commerce backend in microservices</p>
+            <p class="case__desc">Catalogue, cart, order and payment services with Redis-backed caching and idempotent checkout — an exercise in the same patterns I ship for enterprise banking: clean contracts, safe retries, observable flows.</p>
+            <div class="case__tags"><span>Spring Boot</span><span>Microservices</span><span>Redis</span><span>React</span></div>
+            <div class="case__links"><a href="https://github.com/shashank4066" target="_blank" rel="noopener" class="link-arrow">GitHub <i>↗</i></a></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Experiments -->
+      <div class="experiments">
+        <p class="section__label reveal">Experiments</p>
+        <div class="experiments__grid">
+          <a class="xp reveal" href="https://github.com/shashank4066/expense-tracker" target="_blank" rel="noopener">
+            <span class="xp__name">expense-tracker</span>
+            <span class="xp__desc">Spending tracker with category analytics</span>
+            <span class="xp__tags"><span>JavaScript</span></span>
+          </a>
+          <a class="xp reveal" href="https://github.com/shashank4066/youtube-downloader" target="_blank" rel="noopener">
+            <span class="xp__name">youtube-downloader</span>
+            <span class="xp__desc">Minimal web UI on top of a download API</span>
+            <span class="xp__tags"><span>HTML</span></span>
+          </a>
+          <a class="xp reveal" href="https://github.com/shashank4066/project_travel_advisor" target="_blank" rel="noopener">
+            <span class="xp__name">travel-advisor</span>
+            <span class="xp__desc">Places &amp; itinerary advisor app</span>
+            <span class="xp__tags"><span>React</span></span>
+          </a>
+          <a class="xp reveal" href="https://github.com/shashank4066/shashank4066" target="_blank" rel="noopener">
+            <span class="xp__name">shashank4066</span>
+            <span class="xp__desc">GitHub profile README — who I am</span>
+            <span class="xp__tags"><span>Markdown</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Experience ══════════ -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <p class="section__label reveal">Experience</p>
+        <h2 class="section__title reveal">Where I've worked</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl reveal">
+          <div class="tl__head" data-toggle>
+            <div class="tl__role">
+              <span class="tl__company">Tata Consultancy Services</span>
+              <span class="tl__title">Java Full Stack Developer</span>
+            </div>
+            <div class="tl__meta">
+              <span class="tl__where">Mumbai, India · Hybrid</span>
+              <span class="tl__when">May 2024 — Present</span>
+            </div>
+            <button class="tl__more" aria-label="Toggle details"><i></i><i></i></button>
+          </div>
+          <div class="tl__body">
+            <ul>
+              <li>Develop and maintain enterprise features for a mortgage loan processing platform used by real banking workflows — Java, Spring Boot, React, MySQL.</li>
+              <li>Design and enhance REST APIs and backend services, supporting business workflows and integrations across multiple application components.</li>
+              <li>Implement data-access layers with Spring Data JPA and Hibernate; troubleshoot application, database and API integration issues.</li>
+              <li>Containerize services with Docker and work in Azure DevOps CI/CD pipelines for build and deployment.</li>
+              <li>Write JUnit tests, debug defects and collaborate with QA through Agile sprint cycles.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl reveal">
+          <div class="tl__head" data-toggle>
+            <div class="tl__role">
+              <span class="tl__company">Independent · Freelance</span>
+              <span class="tl__title">Backend Developer &amp; Cloud Consultant</span>
+            </div>
+            <div class="tl__meta">
+              <span class="tl__where">Remote · India</span>
+              <span class="tl__when">2023 — 2024</span>
+            </div>
+            <button class="tl__more" aria-label="Toggle details"><i></i><i></i></button>
+          </div>
+          <div class="tl__body">
+            <ul>
+              <li>Shipped backend systems for four early-stage clients — a UPI reconciliation engine, an e-commerce catalogue API, a booking platform and a reporting pipeline.</li>
+              <li>Designed REST contracts, data models and idempotent payment flows; integrated third-party payment and messaging APIs.</li>
+              <li>Set up Docker-based deployments, GitHub Actions CI/CD and cost-aware hosting on Azure for small teams without dedicated DevOps.</li>
+              <li>Took two products from empty repo to live production, including monitoring and on-call runbooks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs">
+        <p class="section__label reveal">Certifications</p>
+        <div class="certs__grid">
+          <a class="cert reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/Shashank-5667/62007046B66E3FD4?sharingId=D060A035280A2E70" target="_blank" rel="noopener">
+            <span class="cert__badge">AI-200</span>
+            <div>
+              <span class="cert__name">Azure AI Cloud Developer Associate</span>
+              <span class="cert__issuer">Microsoft Certified · 2026</span>
+            </div>
+            <span class="cert__link">Verify <i>↗</i></span>
+          </a>
+          <a class="cert reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/Shashank-5667/41FA771330F536A0?sharingId=D060A035280A2E70" target="_blank" rel="noopener">
+            <span class="cert__badge">AZ-900</span>
+            <div>
+              <span class="cert__name">Azure Fundamentals</span>
+              <span class="cert__issuer">Microsoft Certified</span>
+            </div>
+            <span class="cert__link">Verify <i>↗</i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="edu">
+        <p class="section__label reveal">Education</p>
+        <div class="edu__rows">
+          <div class="edu__row reveal">
+            <span class="edu__deg">Master of Computer Applications (MCA)</span>
+            <span class="edu__school">ABES Engineering College</span>
+            <span class="edu__when">2021 — 2023</span>
+          </div>
+          <div class="edu__row reveal">
+            <span class="edu__deg">Bachelor of Computer Applications (BCA)</span>
+            <span class="edu__school">Institute of Technology and Science, Ghaziabad</span>
+            <span class="edu__when">2017 — 2020</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Stack ══════════ -->
+    <section class="section" id="stack">
+      <div class="section__head">
+        <p class="section__label reveal">Tech stack</p>
+        <h2 class="section__title reveal">Tools I reach for</h2>
+        <p class="section__desc reveal">Labelled honestly — <b>work</b> means shipping in production, <b>project</b> means shipped in my own systems, <b>learning</b> means actively levelling up.</p>
+      </div>
+      <div class="stack__grid">
+        <div class="stack__group reveal">
+          <h3>Languages</h3>
+          <div class="stack__pills">
+            <span class="pill"><i>Java</i><em>work</em></span>
+            <span class="pill"><i>SQL</i><em>work</em></span>
+            <span class="pill"><i>JavaScript</i><em>work</em></span>
+            <span class="pill"><i>Python</i><em>project</em></span>
+          </div>
+        </div>
+        <div class="stack__group reveal">
+          <h3>Backend</h3>
+          <div class="stack__pills">
+            <span class="pill"><i>Spring Boot</i><em>work</em></span>
+            <span class="pill"><i>Spring MVC</i><em>work</em></span>
+            <span class="pill"><i>JPA · Hibernate</i><em>work</em></span>
+            <span class="pill"><i>REST APIs</i><em>work</em></span>
+            <span class="pill"><i>Event-driven</i><em>project</em></span>
+            <span class="pill"><i>JUnit</i><em>work</em></span>
+            <span class="pill"><i>Maven</i><em>work</em></span>
+          </div>
+        </div>
+        <div class="stack__group reveal">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="stack__pills">
+            <span class="pill"><i>Azure DevOps</i><em>work</em></span>
+            <span class="pill"><i>Docker</i><em>work</em></span>
+            <span class="pill"><i>GitHub Actions</i><em>project</em></span>
+            <span class="pill"><i>Kubernetes · AKS</i><em>learning</em></span>
+            <span class="pill"><i>Terraform</i><em>learning</em></span>
+            <span class="pill"><i>Microsoft Azure</i><em>certified</em></span>
+          </div>
+        </div>
+        <div class="stack__group reveal">
+          <h3>Data &amp; Messaging</h3>
+          <div class="stack__pills">
+            <span class="pill"><i>MySQL</i><em>work</em></span>
+            <span class="pill"><i>PostgreSQL</i><em>project</em></span>
+            <span class="pill"><i>Apache Kafka</i><em>project</em></span>
+            <span class="pill"><i>Redis</i><em>project</em></span>
+          </div>
+        </div>
+        <div class="stack__group reveal">
+          <h3>Observability</h3>
+          <div class="stack__pills">
+            <span class="pill"><i>OpenTelemetry</i><em>project</em></span>
+            <span class="pill"><i>Prometheus</i><em>project</em></span>
+            <span class="pill"><i>Grafana</i><em>project</em></span>
+          </div>
+        </div>
+        <div class="stack__group reveal">
+          <h3>Frontend &amp; Tools</h3>
+          <div class="stack__pills">
+            <span class="pill"><i>React</i><em>work</em></span>
+            <span class="pill"><i>Git</i><em>work</em></span>
+            <span class="pill"><i>Postman</i><em>work</em></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ About ══════════ -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <p class="section__label reveal">About</p>
+        <h2 class="section__title reveal">Backend engineer. Systems thinker.</h2>
+      </div>
+      <div class="about">
+        <div class="about__media reveal">
+          <img src="assets/img/shashank-portrait.png" alt="Portrait of Shashank" draggable="false" />
+          <div class="about__media-card">
+            <span class="about__media-name">Shashank</span>
+            <span class="about__media-role">Java Backend Developer</span>
+            <span class="about__media-loc">Mumbai, India · <span id="istClock">--:--:--</span> IST</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="reveal">I'm a Java backend developer who ended up loving the unglamorous parts of software — the retry that saves a payment, the test that catches the bug before a bank does, the log line that explains a 2 a.m. incident.</p>
+          <p class="reveal">At <b>TCS</b> I work on a mortgage loan processing platform: Spring Boot services, REST APIs, JPA data layers, Docker and Azure DevOps pipelines. On my own time I build the systems I want to be trusted with — event-driven incident management, durable AI pipelines, reconciliation engines — and document them honestly, limitations included.</p>
+          <div class="about__list">
+            <p class="section__label reveal">How I work with AI</p>
+            <ol>
+              <li class="reveal"><b>Define the boundary.</b> AI explores and drafts; I stay responsible for what ships.</li>
+              <li class="reveal"><b>Review every change.</b> Nothing merges that I can't explain line by line.</li>
+              <li class="reveal"><b>Test behaviour.</b> 26 automated tests on IncidentIQ exist because claims need evidence.</li>
+              <li class="reveal"><b>Show the limits.</b> I document what's unvalidated. Trust is built by honesty, not vibes.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Contact ══════════ -->
+    <section class="section contact" id="contact">
+      <div class="contact__media reveal" aria-hidden="true">
+        <img src="assets/img/shashank-studio.png" alt="" draggable="false" />
+      </div>
+      <p class="section__label reveal">Work together</p>
+      <h2 class="contact__title reveal">Have a backend that needs to be<br /><span>boringly reliable?</span></h2>
+      <a class="contact__email magnetic reveal" href="mailto:shashank.dev.in@gmail.com">
+        <span>shashank.dev.in@gmail.com</span>
+        <i>↗</i>
+      </a>
+      <div class="contact__row reveal">
+        <a class="btn btn--accent magnetic" href="mailto:shashank.dev.in@gmail.com"><span>Start a conversation</span></a>
+        <a class="btn btn--ghost magnetic" href="https://www.linkedin.com/in/shashank4066/" target="_blank" rel="noopener"><span>LinkedIn</span></a>
+        <a class="btn btn--ghost magnetic" href="https://github.com/shashank4066" target="_blank" rel="noopener"><span>GitHub</span></a>
+        <a class="btn btn--ghost magnetic" href="assets/Shashank-Resume.pdf" target="_blank" rel="noopener"><span>Résumé</span></a>
+      </div>
+      <p class="contact__note reveal">Based in Mumbai — collaborating worldwide · usually replies within 24 hours</p>
+    </section>
+
+    <!-- ══════════ Footer ══════════ -->
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4>Work</h4>
+          <a href="#work">Cases</a>
+          <a href="#work">Experiments</a>
+          <a href="https://github.com/shashank4066" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <a href="#experience">Experience</a>
+          <a href="#stack">Stack</a>
+          <a href="#about">About me</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="mailto:shashank.dev.in@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/shashank4066/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="assets/Shashank-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        </div>
+        <div class="footer__brand">
+          <span class="footer__logo">Shashank<span class="accent">.</span></span>
+          <span class="footer__tag">Java APIs for banking workflows — tested, observable, shipped.</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Shashank · Mumbai, India</span>
+        <span class="footer__status"><i class="pulse-dot"></i> <span id="istClock2">--:--:--</span> IST</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
