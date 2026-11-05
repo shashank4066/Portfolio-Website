@@ -1087,6 +1087,21 @@ body.ready .hero__name-line > span { transform: translateY(0); }
 .cert__link i { font-style: normal; transition: transform 0.3s var(--ease); }
 .cert:hover .cert__link i { transform: translate(3px, -3px); }
 
+.cert--aws {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  row-gap: 14px;
+}
+
+.cert__actions {
+  grid-column: 2;
+  display: flex; flex-wrap: wrap; gap: 12px 24px;
+}
+
+.cert__actions .cert__link { margin-left: 0; }
+.cert__actions .cert__link:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 2px; }
+
 /* Education */
 
 .edu { margin-top: clamp(56px, 7vw, 80px); }
