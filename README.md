@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Personal portfolio for **Shashank** — Java Backend Developer (Spring Boot · Microservices · Azure).
+Personal portfolio for **Shashank** — AI Engineer (Python · Generative AI · RAG · Agentic Systems).
 
 Live at **https://shashankdev.tech**
 
